@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThreadCraft - Premium Clothing</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e92bbe5d-83ce-42d8-ac25-b457c48bab3d.png"
+                        alt="ThreadCraft logo - modern abstract textile design" />
+                    ThreadCraft
+                </a>
+                <!-- Search Bar -->
+                <div class="container search-bar">
+                    <input type="text" id="searchInput" placeholder="Search for products...   🔍︎">
+                </div>
+
+                <div class="hamburger" id="hamburger">&#9776;</div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" class="category-link" data-category="men">Men</a></li>
+                    <li><a href="#" class="category-link" data-category="women">Women</a></li>
+                    <li><a href="#" class="category-link" data-category="kids">Kids</a></li>
+                    <li><a href="#" class="category-link" data-category="new">New Arrivals</a></li>
+                    <li><a href="#" class="category-link" data-category="new"></a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i> 🛒</i>
+                    <span class="cart-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Style Story</h1>
+                <p>Discover our premium collection of clothing crafted with passion and attention to detail. Where
+                    comfort meets elegance.</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Sections -->
+    <section id="men-section" class="category-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Men's Collection</h2>
+            <div class="collection-grid" id="men-grid">
+                <!-- Men's Clothing 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://assets.isu.pub/document-structure/230822103246-17411773b5b2e60ca568a11b823aabd2/v1/9daf56c35798034ed3d1c9b5b9cf7c71.jpeg"
+                            alt="Premium men's polo shirt" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Polo T-Shirt</h3>
+                        <p>Breathable pique polo with classic fit.</p>
+                        <div class="price">
+                            <span>₹499</span>
+                            <span>₹699</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Men's Clothing 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/28084820/2024/3/7/d2748ec2-2596-4794-9690-dc93541e675a1709805417395ManiacMenComfortOpaqueStripedCasualShirt1.jpg"
+                            alt="Stylish Striped Shirt" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Stylish Striped Shirt</h3>
+                        <p>Men Comfort Opaque Striped Casual Shirt</p>
+                        <div class="price">
+                            <span>₹399</span>
+                            <span>₹499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Men's Clothing 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <img src="https://images.meesho.com/images/products/471584268/bnmyw_512.webp"
+                            alt="Men's slim fit jeans" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Slim Fit Jeans</h3>
+                        <p>Stretch denim jeans with modern silhouette.</p>
+                        <div class="price">
+                            <span>₹599</span>
+                            <span>₹799</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="women-section" class="category-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Women's Collection</h2>
+            <div class="collection-grid" id="women-grid">
+                <!-- Women's Clothing 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2025/APRIL/24/OjrJ6dyq_82e225870a4843cba207bbd5466f1194.jpg"
+                            alt="Elegant wrap dress" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Wrap Dress</h3>
+                        <p>Flattering wrap design with adjustable tie waist.</p>
+                        <div class="price">
+                            <span>₹699</span>
+                            <span>₹899</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Women's Clothing 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18186cfc-d4db-401a-865f-dc69def32f30.png"
+                            alt="Silk blouse" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Silk Blouse</h3>
+                        <p>Luxurious silk blouse with delicate details.</p>
+                        <div class="price">
+                            <span>₹399</span>
+                            <span>₹499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Women's Clothing 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/14393170/2021/10/18/1851089b-9fcf-45ec-bd77-cae001b3ea6b1634549537451-Chemistry-Women-Shirts-9791634549536927-1.jpg"
+                            alt="Blue Solid Top" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Blue Solid Top</h3>
+                        <p>Elegant blue solid top with a soft, comfortable fit—perfect for everyday wear.</p>
+                        <div class="price">
+                            <span>₹499</span>
+                            <span>₹699</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="kids-section" class="category-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Kids' Collection</h2>
+            <div class="collection-grid" id="kids-grid">
+                <!-- Kids Clothing 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e75aab84-35dd-4616-afeb-e90857db095e.png"
+                            alt="Colorful graphic t-shirt for kids" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Graphic Tee Set</h3>
+                        <p>Soft cotton t-shirts with fun prints and durable quality.</p>
+                        <div class="price">
+                            <span>₹249</span>
+                            <span>₹349</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Kids Clothing 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.fancydresswale.com/cdn/shop/products/Newborn-Toddler-Kids-Monkey-Printed-Baby-Boys-Clothing-Set-Long-Sleeve-Tops-Pants-Little-Kids-All-season-Outfits_-Brown-fancydresswale.com-53414769.jpg?v=1744966753"
+                            alt="Colorful graphic t-shirt for kids" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Newborn Toddler Kids</h3>
+                        <p>Newborn toddler boys' monkey print clothing set with long sleeve top and pants.</p>
+                        <div class="price">
+                            <span>₹549</span>
+                            <span>₹749</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Kids Clothing 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Bestseller</span>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e5e259be-ea2b-42e2-a934-d54f9d4768a7.png"
+                            alt="Fleece-lined hoodie with kangaroo pocket" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Zip-Up Hoodie</h3>
+                        <p>Cozy fleece hoodie with front pocket and adjustable hood.</p>
+                        <div class="price">
+                            <span>₹399</span>
+                            <span>₹499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-section" class="category-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="collection-grid" id="new-grid">
+                <!-- New Arrival 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00bad682-7b0a-42a6-9e2d-710bf63c2cac.png"
+                            alt="Waterproof windbreaker in bright yellow" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Weatherproof Jacket</h3>
+                        <p>Lightweight waterproof jacket with adjustable cuffs.</p>
+                        <div class="price">
+                            <span>₹799</span>
+                            <span>₹999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- New Arrival 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f6082ef4-6f70-42c0-b7eb-2f184fac5df7.png"
+                            alt="Black linen jumpsuit with wide legs" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Linen Jumpsuit</h3>
+                        <p>Breathable linen jumpsuit with adjustable straps.</p>
+                        <div class="price">
+                            <span>₹599</span>
+                            <span>₹799</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- New Arrival 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <img src="https://shopthemint.com/cdn/shop/products/98709.Tried-And-True-Blush-Pink-Ruffled-Blouse__copy_3_600x.progressive.jpg?v=1672246358"
+                            alt="Blush Pink Solid Top" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Blush Pink Top</h3>
+                        <p>Trendy solid pink top with a relaxed fit and modern styling.</p>
+                        <div class="price">
+                            <span>₹549</span>
+                            <span>₹749</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <div class="container">
+        <h2 class="section-title">Featured Collections</h2>
+        <div class="collection-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d37440e6-7c15-409f-962d-47b08c9fd162.png"
+                        alt="Modern slim-fit navy blue suit with fine pinstripes" />
+                </div>
+                <div class="product-info">
+                    <h3>Premium Suit Collection</h3>
+                    <p>Slim-fit suits crafted from premium Italian wool with impeccable tailoring.</p>
+                    <div class="price">
+                        <span>₹299</span>
+                        <span>₹399</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dc0ade7c-2369-498a-9838-a17cb4342ccf.png"
+                        alt="Soft cotton oversized sweatshirt in muted olive green" />
+                </div>
+                <div class="product-info">
+                    <h3>Casual Comfort Hoodie</h3>
+                    <p>Ultra-soft cotton blend hoodie perfect for lounging or casual outings.</p>
+                    <div class="price">
+                        <span>₹499</span>
+                        <span>₹699</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Sale</span>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ed84184e-1118-47f3-acbb-972a2a057801.png"
+                        alt="Floral midi dress with ruffled sleeves in pastel pink" />
+                </div>
+                <div class="product-info">
+                    <h3>Floral Midi Dress</h3>
+                    <p>Elegant floral dress with delicate ruffles that flow with every movement.</p>
+                    <div class="price">
+                        <span>₹899</span>
+                        <span>₹1299</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b7740f3-5255-4ae1-9088-05e64ba39d74.png"
+                        alt="Slim jeans in classic dark blue wash with stylish distressing" />
+                </div>
+                <div class="product-info">
+                    <h3>Premium Denim Jeans</h3>
+                    <p>Classic straight fit jeans with stretch for all-day comfort and durability.</p>
+                    <div class="price">
+                        <span>₹799</span>
+                        <span>₹999</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Bestseller</span>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8cf140dd-87f8-416a-9f88-f3f3ccd3ae2d.png"
+                        alt="White button-down shirt with French cuffs and spread collar" />
+                </div>
+                <div class="product-info">
+                    <h3>Classic Dress Shirt</h3>
+                    <p>Crisp white shirt perfect for business or formal occasions with premium detailing.</p>
+                    <div class="price">
+                        <span>₹599</span>
+                        <span>₹799</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b8a07cda-6205-4f75-83c0-cedd561df349.png"
+                        alt="Trendy asymmetric hem jacket in camel color with wide lapels" />
+                </div>
+                <div class="product-info">
+                    <h3>Trendy Fall Jacket</h3>
+                    <p>Stylish outerwear with contemporary details to complete your autumn look.</p>
+                    <div class="price">
+                        <span>₹1299</span>
+                        <span>₹1599</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-overlay">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart">×</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <p class="empty-cart-message">Your cart is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>₹0.00</span>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>ThreadCraft is committed to providing high-quality clothing with sustainable practices.</p>
+                    <div class="social-links">
+                        <a href="#"><i>FB</i></a>
+                        <a href="#"><i>TW</i></a>
+                        <a href="#"><i>IG</i></a>
+                        <a href="#"><i>PIN</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>123 Fashion Street</li>
+                        <li>New Delhi, India</li>
+                        <li>info@threadcraft.com</li>
+                        <li>+91 (011) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 ThreadCraft. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
